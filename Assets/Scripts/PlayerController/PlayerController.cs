@@ -5,7 +5,7 @@ using UnityUtils;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Dependencies")]
+    [Header("References")]
     [SerializeField] private InputReader input;
     [SerializeField] private Transform _transform;
     [SerializeField] private Rigidbody2D rb; 
