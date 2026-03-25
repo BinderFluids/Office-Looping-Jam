@@ -20,6 +20,7 @@ public class InputReader : ScriptableObject, IPlayerActions
         {
             inputActions = new InputSystem();
             inputActions.Player.Enable();
+            inputActions.Player.SetCallbacks(this); 
         }
         inputActions.Enable();
     }
