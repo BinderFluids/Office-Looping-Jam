@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using Eflatun.SceneReference;
 using EventBus;
 using Events;
+using UnityUtils;
 
 namespace Core.Managers
 {
