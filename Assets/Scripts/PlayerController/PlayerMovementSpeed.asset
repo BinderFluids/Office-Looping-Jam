@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerMovementSpeed
   m_EditorClassIdentifier: ScriptableVariables::ScriptableVariables.FloatVariable
   initialValue: 0
-  value: 0
+  value: 12
