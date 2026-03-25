@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee59125ad4bd4d43adc820025cc6eb84, type: 3}
   m_Name: PlayerMovementSpeed
   m_EditorClassIdentifier: ScriptableVariables::ScriptableVariables.FloatVariable
-  initialValue: 0
-  value: 12
+  initialValue: 5
+  value: 5
