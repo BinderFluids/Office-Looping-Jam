@@ -5,12 +5,11 @@ using UnityUtils;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("References")]
+    [Header("Dependencies")]
     [SerializeField] private InputReader input;
     [SerializeField] private Transform _transform;
     [SerializeField] private Rigidbody2D rb; 
-    [SerializeField] private BoxCollider2D col;
-
+    
     [Header("Settings")]
     [SerializeField] private FloatVariable movementSpeed;
     
@@ -21,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
-        Vector2 moveDir = input.Direction.normalized;
+        Vector2 moveDir = input.Direction;
         rb.linearVelocity = moveDir * movementSpeed.Value;
     }
 }
