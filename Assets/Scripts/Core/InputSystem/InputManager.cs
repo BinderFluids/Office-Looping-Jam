@@ -6,6 +6,7 @@ public class InputManager : Singleton<InputManager>
 {
     [SerializeField] private bool enableInputOnAwake; 
     [SerializeField] private InputReader inputReader;
+    public InputReader InputReader => inputReader;
 
     protected override void Awake()
     {
@@ -14,5 +15,5 @@ public class InputManager : Singleton<InputManager>
     }
 
     
-    public void EnableInput() => inputReader.EnableActions();
+    public void EnableInput() => inputReader.EnableInput(InputActionType.Player);
 }

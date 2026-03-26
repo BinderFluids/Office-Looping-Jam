@@ -13,9 +13,9 @@ namespace InteractionSystem
         [SerializeField] private GameObject interactionIndicator; 
         private IInteractable closestTarget; 
         
-        private void Awake()
+        private void Start()
         {
-            input.onInteract += TryInteract;
+            input.Interact.Action += TryInteract;
             
             interactionIndicator.SetActive(false);
             interactionIndicator.transform.SetParent(null); 
@@ -48,7 +48,7 @@ namespace InteractionSystem
         
         private void OnDestroy()
         {
-            input.onInteract -= TryInteract; 
+            input.Interact.Action -= TryInteract; 
         }
     }
 }

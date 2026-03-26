@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
-        Vector2 moveDir = input.Direction;
+        Vector2 moveDir = input.PlayerMove.Value;
         rb.linearVelocity = moveDir * movementSpeed.Value;
     }
 }
