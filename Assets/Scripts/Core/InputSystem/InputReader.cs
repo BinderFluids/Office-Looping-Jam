@@ -12,6 +12,7 @@ public class InputReader : ScriptableObject, IPlayerActions, IDialogueActions, I
     public BoolInputData Interact;
     public BoolInputData Progress;
     public BoolInputData Skip;
+    public BoolInputData Click;
     
     public Vector2InputData PlayerMove;
     public Vector2InputData DialogueMove;
@@ -69,6 +70,7 @@ public class InputReader : ScriptableObject, IPlayerActions, IDialogueActions, I
         DialogueMove = new Vector2InputData(inputActions.Dialogue.Move);
         Progress = new BoolInputData(inputActions.Dialogue.Progress);
         Skip = new BoolInputData(inputActions.Dialogue.Skip);
+        Click = new BoolInputData(inputActions.Player.Click);
         
         DebugA = new BoolInputData(inputActions.Debug.A);
     }
@@ -103,5 +105,10 @@ public class InputReader : ScriptableObject, IPlayerActions, IDialogueActions, I
     public void OnInteract(InputAction.CallbackContext context)
     {
         Interact.Trigger(context);
+    }
+
+    public void OnClick(InputAction.CallbackContext context)
+    {
+        Click.Trigger(context); 
     }
 }
