@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static InputSystem; 
@@ -7,9 +8,10 @@ using static InputSystem;
 [CreateAssetMenu(menuName = "Create InputReader", fileName = "InputReader", order = 0)]
 public class InputReader : ScriptableObject, IPlayerActions, IDialogueActions, IDebugActions
 {
-    private InputActionType activeActionType; 
+    [SerializeField] private InputActionType activeActionType; 
     public BoolInputData Interact;
     public BoolInputData Progress;
+    public BoolInputData Skip;
     public Vector2InputData PlayerMove;
     public Vector2InputData DialogueMove;
     public BoolInputData DebugA;
@@ -43,6 +45,8 @@ public class InputReader : ScriptableObject, IPlayerActions, IDialogueActions, I
                 inputActions.Disable();
                 break;
         }
+        
+        Debug.Log($"Player Enabled: {inputActions.Player.enabled} Dialogue Enabled: {inputActions.Dialogue.enabled}");
     }
     void OnFirstEnable()
     {
@@ -58,6 +62,7 @@ public class InputReader : ScriptableObject, IPlayerActions, IDialogueActions, I
         
         DialogueMove = new Vector2InputData(inputActions.Dialogue.Move);
         Progress = new BoolInputData(inputActions.Dialogue.Progress);
+        Skip = new BoolInputData(inputActions.Dialogue.Skip);
         
         DebugA = new BoolInputData(inputActions.Debug.A);
     }
@@ -66,9 +71,18 @@ public class InputReader : ScriptableObject, IPlayerActions, IDialogueActions, I
     {
         DebugA.Trigger(context);
     }
+
+    public void OnSkip(InputAction.CallbackContext context)
+    {
+        Skip.Trigger(context);
+    }
+
     public void OnMove(InputAction.CallbackContext context)
     {
-        PlayerMove.Trigger(context);
+        if (activeActionType == InputActionType.Player)
+            PlayerMove.Trigger(context);
+        else if (activeActionType == InputActionType.Dialogue)
+            DialogueMove.Trigger(context);
     }
     public void OnProgress(InputAction.CallbackContext context)
     {

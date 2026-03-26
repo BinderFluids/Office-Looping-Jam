@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d5cadad19b21584bac1122d7b17439e, type: 3}
   m_Name: Test
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  inkAsset: {fileID: 0}
+  inkAsset: {fileID: 4900000, guid: 55bca7cfbb5f53842911e218837776d7, type: 3}

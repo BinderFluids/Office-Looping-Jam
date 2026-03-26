@@ -4,11 +4,14 @@ using UnityEngine;
 using Ink.Runtime;
 using TMPro;
 using UnityEditor;
+using UnityUtils;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : Singleton<DialogueManager>
 {
     public static DialogueManager instance;
     public static bool isDialogueActive;
+
+    [SerializeField] private InputReader input; 
     
     [SerializeField] private Typewriter typewriter;
     [SerializeField] private DialogueCursor dialogueCursor;
@@ -23,19 +26,24 @@ public class DialogueManager : MonoBehaviour
     
     private Story currentStory;
     private bool canProgressDialogue;
-
+    
     public void Update()
     {
+        #if UNITY_EDITOR
         if (InputManager.Instance.InputReader.DebugA.WasPressedThisFrame)
         {
             DisplayDialogue(testDialogueSo);
         }
+        if (input.Progress.WasPressedThisFrame)
+            ContinueStory();
+        #endif
     }
 
 
     public void DisplayDialogue(DialogueSO dialogueSo)
     {
-        InputManager.Instance.InputReader.EnableInput(InputActionType.Dialogue);
+        input.EnableInput(InputActionType.Dialogue);
+        //input.Progress.ActionNoArgs += ContinueStory; 
         isDialogueActive = true;
         
         choicesBox.SetActive(false);
@@ -49,6 +57,11 @@ public class DialogueManager : MonoBehaviour
     
     private void ContinueStory()
     {
+        print($"" +
+              $"ContinueStory, " +
+              $"Current Story Exists: {currentStory != null}, " +
+              $"Can Progress Dialogue: {canProgressDialogue}, " +
+              $"Current Story Can Continue: {currentStory.canContinue}");
         if (!currentStory) return;
         if (!canProgressDialogue) return;
 
@@ -65,6 +78,8 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        print("EndDialogue");
+        
         InputManager.Instance.InputReader.EnableInput(InputActionType.Player);
         isDialogueActive = false;
         
@@ -83,8 +98,12 @@ public class DialogueManager : MonoBehaviour
 
         choicesBox.SetActive(true);
         
+        choiceTexts.ForEach(t => t.gameObject.SetActive(false));
         for (int i = 0; i < choices.Count; i++)
+        {
             choiceTexts[i].text = choices[i].text;
+            choiceTexts[i].gameObject.SetActive(true);
+        }
 
         dialogueCursor.Enable();
         dialogueCursor.onSelectChoice += OnCursorSelectChoice;
@@ -119,6 +138,7 @@ public class DialogueManager : MonoBehaviour
 
     private void CleanupEvents()
     {
+        input.Progress.ActionNoArgs -= ContinueStory; 
         typewriter.onTextComplete -= OnTypewriterTextComplete;
         dialogueCursor.onSelectChoice -= OnCursorSelectChoice;
     }

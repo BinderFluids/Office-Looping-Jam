@@ -52,7 +52,7 @@ public class Typewriter : MonoBehaviour
             }
             
             dialogueText.maxVisibleCharacters =
-                input.Progress.IsPressed
+                input.Skip.IsPressed
                     ? dialogueText.maxVisibleCharacters + Mathf.CeilToInt(Time.deltaTime * skipCharactersPerSecond)
                     : Mathf.Min(
                         nextPunctuationIndex,

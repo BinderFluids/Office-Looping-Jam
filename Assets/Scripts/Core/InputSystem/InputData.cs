@@ -27,10 +27,13 @@ public abstract class InputData<T>
     public bool WasReleasedThisFrame => InputAction.WasReleasedThisFrame();
     
     public T Value { get; protected set; }
+    
+    public event UnityAction ActionNoArgs = delegate { };
     public event UnityAction<T> Action = delegate { };
 
     protected void Invoke(T input)
     {
+        ActionNoArgs?.Invoke();
         Action?.Invoke(input);
     }
 
