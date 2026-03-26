@@ -1,14 +1,17 @@
 using Registry;
 using UnityEngine;
 
-public abstract class MicrogameBehaviour<T> : MonoBehaviour where T : MicrogameContext<T>
+namespace MicrogameSystem
 {
-    private T ctx;
-
-    private void Awake()
+    public abstract class MicrogameBehaviour<T> : MonoBehaviour where T : MicrogameContext<T>
     {
-        Registry<MicrogameBehaviour<T>>.TryAdd(this); 
-    }
+        private T ctx;
 
-    public abstract void OnMicrogameUpdate(float dt);
+        private void Awake()
+        {
+            Registry<MicrogameBehaviour<T>>.TryAdd(this); 
+        }
+
+        public abstract void OnMicrogameUpdate(float dt);
+    }
 }
