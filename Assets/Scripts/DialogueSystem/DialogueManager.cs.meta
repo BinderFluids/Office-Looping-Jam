@@ -1,3 +1,18 @@
 fileFormatVersion: 2
 guid: fd6b9b155fa149ecb09cdc458cad3844
-timeCreated: 1774491887
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - input: {fileID: 11400000, guid: 2715caa13f37b73c3adf20a31280f2d1, type: 2}
+  - typewriter: {instanceID: 0}
+  - dialogueCursor: {instanceID: 0}
+  - testDialogueSo: {instanceID: 0}
+  - dialogueBox: {instanceID: 0}
+  - choicesBox: {instanceID: 0}
+  - continueIndicator: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
