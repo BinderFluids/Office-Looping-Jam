@@ -122,11 +122,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 5.5, y: 2.5}
+        - {x: 5.5, y: 12.5}
+        - {x: -5.5, y: 12.5}
+        - {x: -5.5, y: -12.5}
+        - {x: 4.5, y: -12.5}
       tessellationDetail: 0
       bones: []
-      spriteID: c0c3d815884af48fbb5094b6652ba7ad
-      internalID: -1423434139
+      spriteID: 34911480a61a14dc8a38697579d9fecf
+      internalID: 431856666
       vertices: []
       indices: 
       edges: []
@@ -144,11 +149,15 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 15, y: 15}
+        - {x: -15, y: 15}
+        - {x: -15, y: -15}
+        - {x: 15, y: -15}
       tessellationDetail: 0
       bones: []
-      spriteID: 9de2173b5ab8d4de5a40441cdeab0578
-      internalID: 307124012
+      spriteID: 269ed3f9198b545b8ac23d05db025c0c
+      internalID: -152907866
       vertices: []
       indices: 
       edges: []
@@ -166,11 +175,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 9, y: -3.5}
+        - {x: 9, y: 11.5}
+        - {x: 7, y: 11.5}
+        - {x: -2, y: 12.5}
+        - {x: -4, y: 12.5}
+        - {x: -9, y: 5.5}
+        - {x: -9, y: 4.5}
+        - {x: -8, y: -2.5}
+        - {x: -4, y: -12.5}
+        - {x: 6, y: -12.5}
       tessellationDetail: 0
       bones: []
-      spriteID: aca8c017335d44c25ac5a36d6c324b5a
-      internalID: 285741950
+      spriteID: f2cdd2ece0b204ea6a80917830314521
+      internalID: -1921738272
       vertices: []
       indices: 
       edges: []
@@ -188,11 +207,19 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 14, y: -3.5}
+        - {x: 14, y: 9.5}
+        - {x: 10, y: 11.5}
+        - {x: -7, y: 11.5}
+        - {x: -14, y: 9.5}
+        - {x: -14, y: -7.5}
+        - {x: -6, y: -11.5}
+        - {x: 10, y: -11.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 9a68dc5d6c6b640aba420d4a9bfd181e
-      internalID: -985117355
+      spriteID: f0182f60062bd4988ba9b5b1b0585ade
+      internalID: -587266952
       vertices: []
       indices: 
       edges: []
@@ -210,11 +237,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 13.5, y: -5.5}
+        - {x: 13.5, y: 2.5}
+        - {x: 11.5, y: 9.5}
+        - {x: 9.5, y: 11.5}
+        - {x: -9.5, y: 11.5}
+        - {x: -11.5, y: 9.5}
+        - {x: -13.5, y: 4.5}
+        - {x: -13.5, y: -7.5}
+        - {x: -12.5, y: -11.5}
+        - {x: 12.5, y: -11.5}
       tessellationDetail: 0
       bones: []
-      spriteID: ec701369bc3f648f1b2eee695616f0ca
-      internalID: 1889328621
+      spriteID: e67b1c10919f54f4ba0018dfd60e6392
+      internalID: 607135269
       vertices: []
       indices: 
       edges: []
@@ -232,11 +269,17 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 5.5, y: 7}
+        - {x: 4.5, y: 9}
+        - {x: -2.5, y: 10}
+        - {x: -5.5, y: 10}
+        - {x: -5.5, y: -10}
+        - {x: 5.5, y: -10}
       tessellationDetail: 0
       bones: []
-      spriteID: efbd272dcee0541cebaed377f93db837
-      internalID: -1083516013
+      spriteID: 228843fbd95e242dc953475ffe061b1a
+      internalID: 145738452
       vertices: []
       indices: 
       edges: []
@@ -254,11 +297,17 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 5.5, y: 6}
+        - {x: -4.5, y: 6}
+        - {x: -5.5, y: 5}
+        - {x: -5.5, y: -3}
+        - {x: -3.5, y: -5}
+        - {x: 5.5, y: -5}
       tessellationDetail: 0
       bones: []
-      spriteID: 9385d9a2ba0e4467bad199a4455951fe
-      internalID: 930346477
+      spriteID: 039dfe75b6e0b458e8ee5cabaf3823eb
+      internalID: -163006873
       vertices: []
       indices: 
       edges: []
@@ -270,17 +319,23 @@ TextureImporter:
         x: 224
         y: 173
         width: 16
-        height: 19
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: 3}
+        - {x: 7, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: 0}
+        - {x: -7, y: -8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 759b1e80c7d894f6c9a5aee7af6c90ff
-      internalID: -1304415439
+      spriteID: db621438234494ed1b06353d06973b7f
+      internalID: 1548283622
       vertices: []
       indices: 
       edges: []
@@ -298,11 +353,17 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 7.5, y: 4.5}
+        - {x: 6.5, y: 5.5}
+        - {x: -4.5, y: 5.5}
+        - {x: -6.5, y: 4.5}
+        - {x: -6.5, y: -4.5}
+        - {x: 7.5, y: -4.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 935114b1a1442446f9650a76adc3be08
-      internalID: -1074333018
+      spriteID: d2301a24d18fd4f348210ae278f77c62
+      internalID: -1800841529
       vertices: []
       indices: 
       edges: []
@@ -320,11 +381,17 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 8}
+        - {x: -5, y: 8}
+        - {x: -6, y: 7}
+        - {x: -6, y: -7}
+        - {x: -5, y: -8}
+        - {x: 6, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: bb993fd7890bc43ed868b36a8ed340aa
-      internalID: 1127460694
+      spriteID: 5fff92cc3a7c344f88a939d9149d7635
+      internalID: 1704323195
       vertices: []
       indices: 
       edges: []
@@ -342,11 +409,15 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 8}
+        - {x: -6, y: 8}
+        - {x: -6, y: -8}
+        - {x: 6, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: e3f96643e0a5240949031d026b89abaf
-      internalID: 453107802
+      spriteID: 4a49c043c46434f73ba60037354f6037
+      internalID: 1317722844
       vertices: []
       indices: 
       edges: []
@@ -364,11 +435,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: -8}
+        - {x: 8, y: 6}
+        - {x: 7, y: 12}
+        - {x: 4, y: 13}
+        - {x: -4, y: 13}
+        - {x: -7, y: 11}
+        - {x: -8, y: -1}
+        - {x: -8, y: -7}
+        - {x: -5, y: -13}
+        - {x: 5, y: -13}
       tessellationDetail: 0
       bones: []
-      spriteID: 1835b213f1e7d4e94b3aae24dc730c9f
-      internalID: -1304324341
+      spriteID: 579a0abccc033448ca78d62fcfc4aadb
+      internalID: -443587507
       vertices: []
       indices: 
       edges: []
@@ -380,17 +461,22 @@ TextureImporter:
         x: 128
         y: 128
         width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 22
+      alignment: 9
+      pivot: {x: 0.25, y: 0.36363637}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 16, y: 9}
+        - {x: 2, y: 10}
+        - {x: -16, y: 10}
+        - {x: -16, y: -11}
+        - {x: 16, y: -11}
       tessellationDetail: 0
       bones: []
-      spriteID: 00d21cd62c18445859f511eabb436094
-      internalID: 103628088
+      spriteID: 88eec56a878a6432d8f5a14bec0cf76b
+      internalID: -2116659593
       vertices: []
       indices: 
       edges: []
@@ -408,11 +494,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 5, y: 7.5}
+        - {x: -4, y: 7.5}
+        - {x: -5, y: 3.5}
+        - {x: -5, y: -7.5}
+        - {x: 5, y: -7.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 2bd6bcfc602ac47e38bdbe786083355a
-      internalID: -1028911595
+      spriteID: d92fe6fc48660462684c7e1b754fadfe
+      internalID: 50009220
       vertices: []
       indices: 
       edges: []
@@ -430,21 +521,26 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 4, y: 6.5}
+        - {x: -2, y: 6.5}
+        - {x: -4, y: 1.5}
+        - {x: -4, y: -6.5}
+        - {x: 4, y: -6.5}
       tessellationDetail: 0
       bones: []
-      spriteID: be2c4f9d4e4f64623989913d24838653
-      internalID: -178198482
+      spriteID: 13a5e7155031540f9a8ecf3beeff5d16
+      internalID: -348967405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cubicle Wall Top
+      name: office-tileset_15
       rect:
         serializedVersion: 2
         x: 224
-        y: 128
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -452,61 +548,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: ef18e8db680404c75a0d9b55201aa230
-      internalID: 2294787
+      spriteID: 792f298927c514091b21d72a964f3d2a
+      internalID: 1432888141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cubicle Corner Left
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 4
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72f30c05b6c0c46bea695d44930b6589
-      internalID: 641173599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cubicle Wall T
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 128
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a2aeb49f3ee648f7980e7192753d7e1
-      internalID: -936481236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: office-tileset_18
+      name: office-tileset_16
       rect:
         serializedVersion: 2
         x: 10
@@ -518,17 +574,22 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 6}
+        - {x: 5, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: -7}
+        - {x: 6, y: -7}
       tessellationDetail: 0
       bones: []
-      spriteID: 2a21ad81fad184db4926ec996019a27a
-      internalID: 1253070407
+      spriteID: 77d7110ca5b204d0da862b40c3e56e47
+      internalID: 1182861516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_19
+      name: office-tileset_17
       rect:
         serializedVersion: 2
         x: 32
@@ -540,17 +601,22 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 32, y: 2}
+        - {x: 28, y: 14}
+        - {x: -32, y: 14}
+        - {x: -32, y: -14}
+        - {x: 32, y: -14}
       tessellationDetail: 0
       bones: []
-      spriteID: 767514cd2e0e54badbf189343bdac960
-      internalID: -501065237
+      spriteID: 899ef8abb49984b5e97035164f6b599a
+      internalID: -928737855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_20
+      name: office-tileset_18
       rect:
         serializedVersion: 2
         x: 105
@@ -562,39 +628,48 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 7, y: 12.5}
+        - {x: -7, y: 12.5}
+        - {x: -7, y: -12.5}
+        - {x: 7, y: -12.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 72e5a4ef3cd944c5eb567df46eb26b1d
-      internalID: -89285048
+      spriteID: e02ee3e40a3154ca4a3288ff8454ac02
+      internalID: -2133087174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_21
+      name: office-tileset_19
       rect:
         serializedVersion: 2
-        x: 139
+        x: 136
         y: 104
-        width: 11
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 7}
+        - {x: 6, y: 8}
+        - {x: -5, y: 8}
+        - {x: -5, y: -8}
+        - {x: 5, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: a69d9ce95a7af4e7d90ef2b881abedfc
-      internalID: 1286713686
+      spriteID: 3f149531dfe074fe09fb344b7026ba7e
+      internalID: 1753978125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_22
+      name: office-tileset_20
       rect:
         serializedVersion: 2
         x: 171
@@ -606,17 +681,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 5, y: 12}
+        - {x: -5, y: 12}
+        - {x: -5, y: -12}
+        - {x: 5, y: -12}
       tessellationDetail: 0
       bones: []
-      spriteID: 0fb6f03645c66462086120f51d73f65d
-      internalID: 188430933
+      spriteID: 0031296799788484f913f92399c9846a
+      internalID: 1489506955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_23
+      name: office-tileset_21
       rect:
         serializedVersion: 2
         x: 202
@@ -628,17 +707,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 4.5}
+        - {x: -6, y: 5.5}
+        - {x: -6, y: -5.5}
+        - {x: 6, y: -5.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 8ec11b0ad1a514399a6705362ee98ced
-      internalID: -471159942
+      spriteID: 468e04ed02725456c91868fb5907caff
+      internalID: 1659053901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_24
+      name: office-tileset_22
       rect:
         serializedVersion: 2
         x: 10
@@ -650,17 +733,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: -7}
+        - {x: 6, y: -7}
       tessellationDetail: 0
       bones: []
-      spriteID: 035a35d5c551f4d54a78ffa21e98e06e
-      internalID: 256245081
+      spriteID: 6d2d5fe879f134386b9d53b6a0797a9b
+      internalID: 229595693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_25
+      name: office-tileset_23
       rect:
         serializedVersion: 2
         x: 42
@@ -672,17 +759,25 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: -5}
+        - {x: 6, y: 5}
+        - {x: 5, y: 6}
+        - {x: -5, y: 6}
+        - {x: -6, y: 5}
+        - {x: -6, y: -5}
+        - {x: -5, y: -6}
+        - {x: 5, y: -6}
       tessellationDetail: 0
       bones: []
-      spriteID: 400d4585e64cc4f4380ad54f1c76cf0f
-      internalID: -135213924
+      spriteID: 4df30457c766848f18ab5fb3d6f2eca9
+      internalID: -1203592216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_26
+      name: office-tileset_24
       rect:
         serializedVersion: 2
         x: 74
@@ -694,39 +789,51 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: -7}
+        - {x: 6, y: -7}
       tessellationDetail: 0
       bones: []
-      spriteID: eea0e81260723451193674297e20eee4
-      internalID: -68119254
+      spriteID: a05f3069725624e559a36e9f3e94cb19
+      internalID: -816329721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_27
+      name: office-tileset_25
       rect:
         serializedVersion: 2
-        x: 105
-        y: 73
-        width: 14
-        height: 14
+        x: 104
+        y: 72
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 7, y: -6}
+        - {x: 7, y: 2}
+        - {x: 6, y: 6}
+        - {x: 3, y: 7}
+        - {x: -4, y: 7}
+        - {x: -7, y: 2}
+        - {x: -7, y: -7}
+        - {x: 6, y: -7}
       tessellationDetail: 0
       bones: []
-      spriteID: 563d35ff2c8fc4d9285d661acf599513
-      internalID: -621079235
+      spriteID: 6445e2876e0c34f6aacf48c91d731eca
+      internalID: -2107404117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_28
+      name: office-tileset_26
       rect:
         serializedVersion: 2
         x: 131
@@ -738,17 +845,23 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 12.5, y: 14.5}
+        - {x: -1.5, y: 14.5}
+        - {x: -12.5, y: 6.5}
+        - {x: -12.5, y: -9.5}
+        - {x: -11.5, y: -14.5}
+        - {x: 12.5, y: -14.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 17c3263c3ead54c41bf6438e333d7a57
-      internalID: 1293808184
+      spriteID: ff67fd6d3655e4847a9f512d8eec6311
+      internalID: -1900404893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_29
+      name: office-tileset_27
       rect:
         serializedVersion: 2
         x: 169
@@ -760,17 +873,26 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6.5, y: 1}
+        - {x: 6.5, y: 5}
+        - {x: 2.5, y: 8}
+        - {x: -2.5, y: 8}
+        - {x: -6.5, y: 6}
+        - {x: -6.5, y: 0}
+        - {x: -5.5, y: -7}
+        - {x: -2.5, y: -8}
+        - {x: 3.5, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 0efda5bb2c57943eeb1ee7398f1608dc
-      internalID: -1980601780
+      spriteID: 533996cf39fd1420ca67897da02635d8
+      internalID: -328472172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_30
+      name: office-tileset_28
       rect:
         serializedVersion: 2
         x: 199
@@ -782,17 +904,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 9, y: 11.5}
+        - {x: -9, y: 11.5}
+        - {x: -9, y: -11.5}
+        - {x: 9, y: -11.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 6ba2cb7aa70ea4c2390abd394cf36d07
-      internalID: 1680582911
+      spriteID: 52421df80d9d341d8ba1691445a4aef0
+      internalID: -1190082603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_31
+      name: office-tileset_29
       rect:
         serializedVersion: 2
         x: 9
@@ -804,17 +930,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 7, y: 6}
+        - {x: -7, y: 6}
+        - {x: -7, y: -6}
+        - {x: 7, y: -6}
       tessellationDetail: 0
       bones: []
-      spriteID: 6d8b6008f5898440ba1e70bdd3aff810
-      internalID: 113415507
+      spriteID: 8809a822bc04648e2b0f016c6d65cf6d
+      internalID: -1056215769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_32
+      name: office-tileset_30
       rect:
         serializedVersion: 2
         x: 42
@@ -826,17 +956,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 14.5}
+        - {x: -6, y: 14.5}
+        - {x: -6, y: -14.5}
+        - {x: 6, y: -14.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 17155d985df1a4cc192f2e3af1f48135
-      internalID: 1367591194
+      spriteID: 01762153a5b5f4292bdd22f84c2c8c23
+      internalID: -1765190348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_33
+      name: office-tileset_31
       rect:
         serializedVersion: 2
         x: 74
@@ -848,17 +982,25 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: -10}
+        - {x: 6, y: 9}
+        - {x: 5, y: 11}
+        - {x: -4, y: 11}
+        - {x: -6, y: 9}
+        - {x: -6, y: -7}
+        - {x: -4, y: -11}
+        - {x: 4, y: -11}
       tessellationDetail: 0
       bones: []
-      spriteID: 419d29da879434ca5b09c8dc3df26090
-      internalID: -1760483082
+      spriteID: af23e24e034ba43a4a957867af96e7a5
+      internalID: -1610743076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_34
+      name: office-tileset_32
       rect:
         serializedVersion: 2
         x: 106
@@ -870,17 +1012,24 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 4, y: -9}
+        - {x: 6, y: -2}
+        - {x: 6, y: 11}
+        - {x: -6, y: 11}
+        - {x: -6, y: -10}
+        - {x: -2, y: -11}
+        - {x: 3, y: -11}
       tessellationDetail: 0
       bones: []
-      spriteID: 19e9c4a9968dc4f0eb68a3c11d80892e
-      internalID: -1541741309
+      spriteID: 422e4f6a6a9e342228e711d54fd170ed
+      internalID: -840445860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_35
+      name: office-tileset_33
       rect:
         serializedVersion: 2
         x: 134
@@ -892,17 +1041,23 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 10, y: 14.5}
+        - {x: 9, y: 15.5}
+        - {x: -9, y: 15.5}
+        - {x: -10, y: 14.5}
+        - {x: -10, y: -15.5}
+        - {x: 10, y: -15.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 62c8d5e9369754f58b66f83d2cdc5eab
-      internalID: -709397345
+      spriteID: 923e05ae6523e4348b6e00e6b6858e74
+      internalID: -923605576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_36
+      name: office-tileset_34
       rect:
         serializedVersion: 2
         x: 168
@@ -914,17 +1069,25 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: -4}
+        - {x: 8, y: 6}
+        - {x: 3, y: 8}
+        - {x: -5, y: 8}
+        - {x: -8, y: 5}
+        - {x: -8, y: -5}
+        - {x: -3, y: -8}
+        - {x: 4, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 17df0084ffc8242738116b9ee47555ea
-      internalID: -137555893
+      spriteID: 3e187a32fbfe44322ad82831b05ca364
+      internalID: -1078349639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_37
+      name: office-tileset_35
       rect:
         serializedVersion: 2
         x: 202
@@ -936,17 +1099,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 7}
+        - {x: -6, y: 7}
+        - {x: -6, y: -7}
+        - {x: 6, y: -7}
       tessellationDetail: 0
       bones: []
-      spriteID: 696ce5cb53f3945fe978895f5e4515a8
-      internalID: 2132288408
+      spriteID: c9e5c3a136cbf45ea88ef436db46c9a8
+      internalID: -1108360824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_38
+      name: office-tileset_36
       rect:
         serializedVersion: 2
         x: 10
@@ -958,17 +1125,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6.5, y: 7}
+        - {x: -6.5, y: 7}
+        - {x: -6.5, y: -7}
+        - {x: 6.5, y: -7}
       tessellationDetail: 0
       bones: []
-      spriteID: f09a14831ed384a9fa12234d7f9b6cd1
-      internalID: 1050818022
+      spriteID: 99ea6a218969f4b0aa0125118cf62e4a
+      internalID: 975767487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_39
+      name: office-tileset_37
       rect:
         serializedVersion: 2
         x: 42
@@ -980,17 +1151,23 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 3.5, y: -3}
+        - {x: 6.5, y: 0}
+        - {x: 6.5, y: 5}
+        - {x: -5.5, y: 5}
+        - {x: -5.5, y: 0}
+        - {x: -4.5, y: -4}
       tessellationDetail: 0
       bones: []
-      spriteID: 7e6a2064aa71e417b93b4e586ecd6388
-      internalID: -928707480
+      spriteID: cca9ec608da7645c29e9ed4307b05fa0
+      internalID: -1917019234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_40
+      name: office-tileset_38
       rect:
         serializedVersion: 2
         x: 73
@@ -1002,17 +1179,22 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 7, y: 3}
+        - {x: 4, y: 5}
+        - {x: -7, y: 5}
+        - {x: -7, y: -5}
+        - {x: 7, y: -5}
       tessellationDetail: 0
       bones: []
-      spriteID: 8aa4613967dec40e4a4b5b770918a866
-      internalID: 1779106762
+      spriteID: d469c26e189c74da9a164b223a4ab446
+      internalID: 1480606926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_41
+      name: office-tileset_39
       rect:
         serializedVersion: 2
         x: 106
@@ -1024,17 +1206,22 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: 14.5}
+        - {x: -5, y: 14.5}
+        - {x: -6, y: 13.5}
+        - {x: -6, y: -14.5}
+        - {x: 6, y: -14.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 59d1effdb9e0540f4a82517c3fae9179
-      internalID: 744169373
+      spriteID: 36ac2774841cf4b4faff605570129be6
+      internalID: 217491387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_42
+      name: office-tileset_40
       rect:
         serializedVersion: 2
         x: 141
@@ -1046,17 +1233,22 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 3, y: 3}
+        - {x: -3, y: 3}
+        - {x: -2, y: -1}
+        - {x: 0, y: -3}
+        - {x: 2, y: -3}
       tessellationDetail: 0
       bones: []
-      spriteID: ba63dd6b5d7f74734911abfea4576cb8
-      internalID: -51396188
+      spriteID: 43ef91fdca08b47eab12cca1e9ee1985
+      internalID: -942613964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_43
+      name: office-tileset_41
       rect:
         serializedVersion: 2
         x: 170
@@ -1068,17 +1260,25 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6, y: -2.5}
+        - {x: 6, y: 3.5}
+        - {x: 4, y: 5.5}
+        - {x: -4, y: 5.5}
+        - {x: -6, y: 3.5}
+        - {x: -6, y: -2.5}
+        - {x: -3, y: -5.5}
+        - {x: 2, y: -5.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 0fb0f3323497b4744b5a9cefe8264f17
-      internalID: 1752682377
+      spriteID: ba241c7f85eaa42f499d1f1cf215be5a
+      internalID: 1423972668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office-tileset_44
+      name: office-tileset_42
       rect:
         serializedVersion: 2
         x: 199
@@ -1090,121 +1290,223 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 9, y: 12.5}
+        - {x: -9, y: 12.5}
+        - {x: -9, y: -12.5}
+        - {x: 9, y: -12.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 0211f064a7786436cb048510b0da905f
-      internalID: 759186909
+      spriteID: 39b13fcb02d884bb7829e3c1718e599b
+      internalID: 1376268267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cubicle Wall
+      name: office-tileset_43
       rect:
         serializedVersion: 2
         x: 224
-        y: 112
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -1}
+        - {x: 8, y: -1}
       tessellationDetail: 0
       bones: []
-      spriteID: c160732aef6b0471184227c5f2962ade
-      internalID: -405417920
+      spriteID: 7749c281a29ed414ca0db774bc11a35b
+      internalID: -1304051130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cubicle Wall Corner Right
+      name: office-tileset_44
       rect:
         serializedVersion: 2
-        x: 240
-        y: 128
-        width: 4
+        x: 256
+        y: 144
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -5, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -5, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 471cd9bbc40a54032b183d4e5d09b40b
-      internalID: -498488793
+      spriteID: 4a4eb380c1d824798b07448b91400b8e
+      internalID: -826382647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cubicle Wall Liner
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 112
-        width: 4
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0445ea01293274bdbafc16b61b938997
-      internalID: -470251972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cubicle Wall Liner End
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 96
-        width: 4
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ab18a459c6fa4a1da89132353f083cf
-      internalID: 1924076366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cubicle Connector
+      name: office-tileset_45
       rect:
         serializedVersion: 2
         x: 272
-        y: 128
-        width: 4
+        y: 144
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -5, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -5, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 66907473f0c4748bcb168c014881f905
-      internalID: 266830681
+      spriteID: 60e0c272c2fe243f5a6e8ba7870c9568
+      internalID: 502112299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office-tileset_46
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -5, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc1f10fb035c49f08caec8996338a0f
+      internalID: -214808468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office-tileset_47
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -5, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5f6453db51f47238c03a04c09d3bf8
+      internalID: 614675827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office-tileset_48
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -5, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dc575e49bfd427f9b46574dbde9e2d
+      internalID: -842622871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office-tileset_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: -8}
+        - {x: -5, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b88f194424140989995c5bf2b441a5
+      internalID: -472637382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office-tileset_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -5, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde4ba36b5bd344b6b2cd7d5a4059b8c
+      internalID: -617724532
       vertices: []
       indices: 
       edges: []
@@ -1213,7 +1515,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9bc498407d38c4d6f94899586f333f3f
+    spriteID: f5896fbc262934c83bf51f4f89e117f9
     internalID: 0
     vertices: []
     indices: 
@@ -1225,56 +1527,57 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Cubicle Connector: 266830681
-      Cubicle Corner Left: 641173599
-      Cubicle Wall: -405417920
-      Cubicle Wall Corner Right: -498488793
-      Cubicle Wall Liner: -470251972
-      Cubicle Wall Liner End: 1924076366
-      Cubicle Wall T: -936481236
-      Cubicle Wall Top: 2294787
-      office-tileset_0: -1423434139
-      office-tileset_1: 307124012
-      office-tileset_10: 453107802
-      office-tileset_11: -1304324341
-      office-tileset_12: 103628088
-      office-tileset_13: -1028911595
-      office-tileset_14: -178198482
-      office-tileset_18: 1253070407
-      office-tileset_19: -501065237
-      office-tileset_2: 285741950
-      office-tileset_20: -89285048
-      office-tileset_21: 1286713686
-      office-tileset_22: 188430933
-      office-tileset_23: -471159942
-      office-tileset_24: 256245081
-      office-tileset_25: -135213924
-      office-tileset_26: -68119254
-      office-tileset_27: -621079235
-      office-tileset_28: 1293808184
-      office-tileset_29: -1980601780
-      office-tileset_3: -985117355
-      office-tileset_30: 1680582911
-      office-tileset_31: 113415507
-      office-tileset_32: 1367591194
-      office-tileset_33: -1760483082
-      office-tileset_34: -1541741309
-      office-tileset_35: -709397345
-      office-tileset_36: -137555893
-      office-tileset_37: 2132288408
-      office-tileset_38: 1050818022
-      office-tileset_39: -928707480
-      office-tileset_4: 1889328621
-      office-tileset_40: 1779106762
-      office-tileset_41: 744169373
-      office-tileset_42: -51396188
-      office-tileset_43: 1752682377
-      office-tileset_44: 759186909
-      office-tileset_5: -1083516013
-      office-tileset_6: 930346477
-      office-tileset_7: -1304415439
-      office-tileset_8: -1074333018
-      office-tileset_9: 1127460694
+      office-tileset_0: 431856666
+      office-tileset_1: -152907866
+      office-tileset_10: 1317722844
+      office-tileset_11: -443587507
+      office-tileset_12: -2116659593
+      office-tileset_13: 50009220
+      office-tileset_14: -348967405
+      office-tileset_15: 1432888141
+      office-tileset_16: 1182861516
+      office-tileset_17: -928737855
+      office-tileset_18: -2133087174
+      office-tileset_19: 1753978125
+      office-tileset_2: -1921738272
+      office-tileset_20: 1489506955
+      office-tileset_21: 1659053901
+      office-tileset_22: 229595693
+      office-tileset_23: -1203592216
+      office-tileset_24: -816329721
+      office-tileset_25: -2107404117
+      office-tileset_26: -1900404893
+      office-tileset_27: -328472172
+      office-tileset_28: -1190082603
+      office-tileset_29: -1056215769
+      office-tileset_3: -587266952
+      office-tileset_30: -1765190348
+      office-tileset_31: -1610743076
+      office-tileset_32: -840445860
+      office-tileset_33: -923605576
+      office-tileset_34: -1078349639
+      office-tileset_35: -1108360824
+      office-tileset_36: 975767487
+      office-tileset_37: -1917019234
+      office-tileset_38: 1480606926
+      office-tileset_39: 217491387
+      office-tileset_4: 607135269
+      office-tileset_40: -942613964
+      office-tileset_41: 1423972668
+      office-tileset_42: 1376268267
+      office-tileset_43: -1304051130
+      office-tileset_44: -826382647
+      office-tileset_45: 502112299
+      office-tileset_46: -214808468
+      office-tileset_47: 614675827
+      office-tileset_48: -842622871
+      office-tileset_49: -472637382
+      office-tileset_5: 145738452
+      office-tileset_50: -617724532
+      office-tileset_6: -163006873
+      office-tileset_7: 1548283622
+      office-tileset_8: -1800841529
+      office-tileset_9: 1704323195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

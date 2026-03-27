@@ -6,11 +6,8 @@ namespace LevelGeneration
     [CreateAssetMenu(menuName = "Procedural/Structure Layout")]
     public class StructureLayout : ScriptableObject
     {
-        public string structureName;
-
-        [Header("Structure Tiles")]
+        public GameObject prefab;
         
-
         [Header("Placement Rules")]
         public StructureRule placementRules;
     }
