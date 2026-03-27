@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 6793865388263547930}
   - component: {fileID: 7991425544382545834}
   - component: {fileID: 8683527128531059556}
+  - component: {fileID: 1548969219859819787}
   m_Layer: 0
   m_Name: Toilet
   m_TagString: Untagged
@@ -611,6 +612,23 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1548969219859819787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769099704791573307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc11eec8aab44769a51a31100a0bf28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractionSystem.InteractableBehaviour
+  canInteract: 1
+  OnInteractWrapper:
+    onUnityEventNoArgs:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &3123738537463794077
 GameObject:
   m_ObjectHideFlags: 0
