@@ -8,7 +8,6 @@ namespace LevelGeneration.Generation
     public class TilemapVisualizer : MonoBehaviour
     {
         [SerializeField] private Tilemap floorTilemap, wallTilemap;
-
         [SerializeField] private TileBase floorTile,
             wallTop,
             wallSideRight,
@@ -26,6 +25,26 @@ namespace LevelGeneration.Generation
         {
             PaintTiles(floorPositions, floorTilemap, floorTile);
         }
+        
+        public Vector3 GetWorldPosition(Vector2Int tilePos)
+        {
+            return floorTilemap.CellToWorld((Vector3Int)tilePos);
+        }
+
+        public Vector3 GetCellCenterWorld(Vector2Int tilePos)
+        {
+            return floorTilemap.GetCellCenterWorld((Vector3Int)tilePos);
+        }
+
+        /// <summary>Center of a rectangle of cells whose bottom-left tile is <paramref name="bottomLeftTile"/>.</summary>
+        public Vector3 GetFootprintCenterWorld(Vector2Int bottomLeftTile, Vector2Int footprintSize)
+        {
+            Vector3 corner = GetWorldPosition(bottomLeftTile);
+            Vector3 cs = floorTilemap.cellSize;
+            return corner + new Vector3(cs.x * footprintSize.x * 0.5f, cs.y * footprintSize.y * 0.5f, 0f);
+        }
+
+        public Vector3 FloorCellSizeWorld => floorTilemap.cellSize;
 
         private void PaintTiles(IEnumerable<Vector2Int> positions, Tilemap tilemap, TileBase tile)
         {
@@ -66,8 +85,8 @@ namespace LevelGeneration.Generation
 
         private void PaintSingleTile(Tilemap tilemap, TileBase tile, Vector2Int position)
         {
-            var tilePosition = tilemap.WorldToCell((Vector3Int)position);
-            tilemap.SetTile(tilePosition, tile);
+            var cellPosition = new Vector3Int(position.x, position.y, 0);
+            tilemap.SetTile(cellPosition, tile);
         }
 
         public void Clear()

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -8105925963547529298}
   - component: {fileID: 3373063662957569056}
   - component: {fileID: 3281279347489851726}
+  - component: {fileID: -8920491680874904860}
   m_Layer: 0
   m_Name: LevelGenerator
   m_TagString: Untagged
@@ -46,12 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b0a7b9529a2e43eb85485f80f93a9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
-  structures:
-  - {fileID: 11400000, guid: 41283b2b5b21e470f8f045fe11ad7979, type: 2}
-  - {fileID: 11400000, guid: 08e984249c7414bb9ad13f6edf537e37, type: 2}
-  structuresToSpawn: 3
   layoutGenerator: {fileID: 3281279347489851726}
   tilemapVisualizer: {fileID: 3373063662957569056}
+  structurePlacementHelper: {fileID: -8920491680874904860}
 --- !u!114 &3373063662957569056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.Generation.TilemapVisualizer
   floorTilemap: {fileID: 0}
   wallTilemap: {fileID: 0}
-  floorTile: {fileID: 11400000, guid: bc2b740f554d34084989b9a4e0960b00, type: 2}
+  floorTile: {fileID: 11400000, guid: 6bed9801d63594fd3bc7b516eb76eb7a, type: 2}
   wallTop: {fileID: 11400000, guid: 705b5ade008884f7486cd660e27a2509, type: 2}
   wallSideRight: {fileID: 11400000, guid: 4e9ba786679f743479cc67ea49ed1d51, type: 2}
   wallSiderLeft: {fileID: 11400000, guid: 0599d8383496848b2a00743f5bc644ca, type: 2}
@@ -96,3 +94,20 @@ MonoBehaviour:
   maxHallwayLength: 9
   hallwayThickness: 5
   combineRoomsChance: 0.75
+--- !u!114 &-8920491680874904860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625689546466306344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30fb2a63ad046a7811814044bafb199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.Generation.StructurePlacementHelper
+  structures:
+  - {fileID: 11400000, guid: 41283b2b5b21e470f8f045fe11ad7979, type: 2}
+  - {fileID: 11400000, guid: 08e984249c7414bb9ad13f6edf537e37, type: 2}
+  tilemapVisualizer: {fileID: 3373063662957569056}
+  structureParent: {fileID: 0}

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbc2e43a2b04fd0afb477534ec0a42e, type: 3}
   m_Name: Cubicle Toilet
   m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.StructureLayout
-  prefab: {fileID: 3123738537463794077, guid: 0b498b725e9e94a479557f7241f23b43, type: 3}
+  prefab: {fileID: 3123738537463794077, guid: b3bd8b2319d9b499780ae531e13bd89d, type: 3}
+  footprintInTiles: {x: 5, y: 6}
   placementRules:
-    minCount: 0
-    maxCount: 2147483647
-    mustBeAdjacentToHallway: 0
-    mustBeAdjacentToStructures:
-    - {fileID: 11400000, guid: 41283b2b5b21e470f8f045fe11ad7979, type: 2}
+    minCount: 1
+    maxCount: 2
+    mustBeAdjacentToStructures: []
     avoidOverlap: 1
     placementChance: 1
+  interiorOnlyPlacement: 1
