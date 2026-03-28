@@ -658,6 +658,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1717099326808915775}
   - {fileID: 1008151266459526196}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -910,7 +911,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2381858487415967425}
-  m_Father: {fileID: 1008151266459526196}
+  m_Father: {fileID: 7926256955452614254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &670963938688448224
 Grid:
@@ -977,7 +978,7 @@ GameObject:
   - component: {fileID: 4130601100428871058}
   - component: {fileID: 5343844164961914997}
   m_Layer: 0
-  m_Name: NonInteractables
+  m_Name: NonInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -998,7 +999,6 @@ Transform:
   m_Children:
   - {fileID: 170288035026170509}
   - {fileID: 8055390604728616815}
-  - {fileID: 1717099326808915775}
   m_Father: {fileID: 7926256955452614254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &2887847714224852387

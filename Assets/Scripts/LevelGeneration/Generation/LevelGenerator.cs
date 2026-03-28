@@ -6,9 +6,6 @@ using UnityEngine.Tilemaps;
 
 public class LevelGenerator : MonoBehaviour
 {
-    [SerializeField] private List<StructureLayout> structures = new List<StructureLayout>();
-    [SerializeField] private int structuresToSpawn = 3;
-    
     [SerializeField] private LayoutGenerator layoutGenerator;
     [SerializeField] private TilemapVisualizer tilemapVisualizer;
 

@@ -67,6 +67,17 @@ MonoBehaviour:
   floorTilemap: {fileID: 0}
   wallTilemap: {fileID: 0}
   floorTile: {fileID: 11400000, guid: bc2b740f554d34084989b9a4e0960b00, type: 2}
+  wallTop: {fileID: 11400000, guid: 705b5ade008884f7486cd660e27a2509, type: 2}
+  wallSideRight: {fileID: 11400000, guid: 4e9ba786679f743479cc67ea49ed1d51, type: 2}
+  wallSiderLeft: {fileID: 11400000, guid: 0599d8383496848b2a00743f5bc644ca, type: 2}
+  wallBottom: {fileID: 11400000, guid: 567303b9637494a819e1bce3fc9106b9, type: 2}
+  wallFull: {fileID: 11400000, guid: b3e375abaad1a401db16d94d1dbb3fef, type: 2}
+  wallInnerCornerDownLeft: {fileID: 11400000, guid: a4ea97fea410a4efea244820f5a5814d, type: 2}
+  wallInnerCornerDownRight: {fileID: 11400000, guid: c07a3d3779e8e494aa4eaf9ff3f944c3, type: 2}
+  wallDiagonalCornerDownRight: {fileID: 11400000, guid: d531b2eebb6284cd9bf0e4f3b2f09a52, type: 2}
+  wallDiagonalCornerDownLeft: {fileID: 11400000, guid: 9853633d59de241799539e7c469a996a, type: 2}
+  wallDiagonalCornerUpRight: {fileID: 11400000, guid: abdee3874ca534ce6b439ce20dcfd9ba, type: 2}
+  wallDiagonalCornerUpLeft: {fileID: 11400000, guid: 2931f5538934b40f292b5eac63df223e, type: 2}
 --- !u!114 &3281279347489851726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,4 +95,4 @@ MonoBehaviour:
   minHallwayLength: 4
   maxHallwayLength: 9
   hallwayThickness: 5
-  combineRoomsChance: 0.787
+  combineRoomsChance: 0.75
