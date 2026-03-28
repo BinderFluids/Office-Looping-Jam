@@ -17,7 +17,7 @@ public class LevelGenerator : MonoBehaviour
         this.layoutGenerator.GenerateRooms();
         int[,] tileMapArray = this.layoutGenerator.RoomsToTileArray();
         
-        List<Vector2Int> walkableTiles = new List<Vector2Int>();
+        HashSet<Vector2Int> walkableTiles = new HashSet<Vector2Int>();
         for (int x = 0; x < tileMapArray.GetLength(0); x++)
         {
             for (int y = 0; y < tileMapArray.GetLength(1); y++)
@@ -28,7 +28,8 @@ public class LevelGenerator : MonoBehaviour
                 }
             }
         }
-        Debug.Log("Floor Tiles to paint" + walkableTiles.Count);
+        
         this.tilemapVisualizer.PaintFloorTiles(walkableTiles);
+        WallGenerator.CreateWalls(walkableTiles, this.tilemapVisualizer);
     }
 }
