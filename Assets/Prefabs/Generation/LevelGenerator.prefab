@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 328422653406511534}
   - component: {fileID: -8105925963547529298}
+  - component: {fileID: 3373063662957569056}
+  - component: {fileID: 3281279347489851726}
   m_Layer: 0
   m_Name: LevelGenerator
   m_TagString: Untagged
@@ -47,3 +49,39 @@ MonoBehaviour:
   structures:
   - {fileID: 11400000, guid: 41283b2b5b21e470f8f045fe11ad7979, type: 2}
   - {fileID: 11400000, guid: 08e984249c7414bb9ad13f6edf537e37, type: 2}
+  structuresToSpawn: 3
+  layoutGenerator: {fileID: 3281279347489851726}
+  tilemapVisualizer: {fileID: 3373063662957569056}
+--- !u!114 &3373063662957569056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625689546466306344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01101090c4640da8b0d4fcd7c5adef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.Generation.TilemapVisualizer
+  floorTilemap: {fileID: 0}
+  wallTilemap: {fileID: 0}
+  floorTile: {fileID: 11400000, guid: bc2b740f554d34084989b9a4e0960b00, type: 2}
+--- !u!114 &3281279347489851726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625689546466306344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170e19f0d217462aa0a064fcdcb39333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.Generation.LayoutGenerator
+  maxRooms: 15
+  minRooms: 3
+  minHallwayLength: 4
+  maxHallwayLength: 9
+  hallwayThickness: 5
+  combineRoomsChance: 0.787
