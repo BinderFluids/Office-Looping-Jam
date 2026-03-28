@@ -1,39 +1,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 using LevelGeneration;
+using LevelGeneration.Generation;
+using UnityEngine.Tilemaps;
 
 public class LevelGenerator : MonoBehaviour
 {
     [SerializeField] private List<StructureLayout> structures = new List<StructureLayout>();
     [SerializeField] private int structuresToSpawn = 3;
+    
+    [SerializeField] private LayoutGenerator layoutGenerator;
+    [SerializeField] private TilemapVisualizer tilemapVisualizer;
 
     private void Start()
     {
-        GenerateLevel();
-    }
-
-    private void GenerateLevel()
-    {
-        if (structures.Count == 0)
+        this.layoutGenerator.GenerateRooms();
+        int[,] tileMapArray = this.layoutGenerator.RoomsToTileArray();
+        
+        List<Vector2Int> walkableTiles = new List<Vector2Int>();
+        for (int x = 0; x < tileMapArray.GetLength(0); x++)
         {
-            Debug.LogWarning("No structures assigned!");
-            return;
-        }
-
-        for (int i = 0; i < structuresToSpawn; i++)
-        {
-            // Pick a random structure
-            StructureLayout layout = structures[Random.Range(0, structures.Count)];
-
-            if (layout.prefab != null)
+            for (int y = 0; y < tileMapArray.GetLength(1); y++)
             {
-                Vector3 spawnPosition = new Vector3(
-                    Mathf.Round(Random.Range(-15f, 15f)),
-                    Mathf.Round(Random.Range(-15f, 15f)),
-                    0
-                );
-                Instantiate(layout.prefab, spawnPosition, Quaternion.identity);
+                if (tileMapArray[x, y] == 0)
+                {
+                    walkableTiles.Add(new Vector2Int(x, y));
+                }
             }
         }
+        Debug.Log("Floor Tiles to paint" + walkableTiles.Count);
+        this.tilemapVisualizer.PaintFloorTiles(walkableTiles);
     }
 }

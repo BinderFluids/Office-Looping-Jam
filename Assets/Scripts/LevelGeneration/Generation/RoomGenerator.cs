@@ -27,12 +27,24 @@ namespace LevelGeneration.Generation
         {
             return size switch
             {
-                RoomSize.Small => new RoomSettings(1, 3, 3, 6, 6),
-                RoomSize.Medium => new RoomSettings(Random.Range(2, 4), 3, 3, 8, 8),
-                RoomSize.Large => new RoomSettings(Random.Range(3, 6), 4, 4, 10, 10),
-                RoomSize.ExtraLarge => new RoomSettings(Random.Range(5, 10), 4, 4, 12, 12),
-                _ => new RoomSettings(1, 3, 3, 6, 6)
+                RoomSize.Small => new RoomSettings(0, 4, 4, 8, 8),
+                RoomSize.Medium => new RoomSettings(0, 5, 5, 11, 11),
+                RoomSize.Large => new RoomSettings(0, 6, 6, 13, 13),
+                RoomSize.ExtraLarge => new RoomSettings(0, 8, 8, 17, 17),
+                _ => new RoomSettings(0, 4, 4, 8, 8)
             };
+        }
+
+        public static Vector2Int SampleDimensions(RoomSettings settings)
+        {
+            return new Vector2Int(
+                Random.Range(settings.minWidth, settings.maxWidth),
+                Random.Range(settings.minHeight, settings.maxHeight));
+        }
+
+        public static Room CreateRoomFromRect(RoomSettings settings, RectInt rect)
+        {
+            return new Room(settings, new List<RectInt> { rect });
         }
 
         public static Room GenerateRoom(RoomSettings settings, int startX, int startY)

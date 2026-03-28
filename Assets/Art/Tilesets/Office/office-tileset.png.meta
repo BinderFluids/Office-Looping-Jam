@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -1511,6 +1511,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Floor
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8dbcbf77ec634070a19665ae235681b
+      internalID: 1793852528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1527,6 +1549,19 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      Floor: 1793852528
+      Wall90DegreeJoiner: 1257569037
+      WallConnectL: 1988076862
+      WallConnector: -2057708886
+      WallDeco: -109388238
+      WallDecoEn: -2035161433
+      WallDecoEndTop: -505839913
+      WallEndBottomL: -168810164
+      WallEndBottomR: -158671141
+      WallEndR: 1600703324
+      WallEndTopL: -822691664
+      WallEndTopR: 2069862311
+      WallT: -2116598307
       office-tileset_0: 431856666
       office-tileset_1: -152907866
       office-tileset_10: 1317722844
@@ -1574,6 +1609,7 @@ TextureImporter:
       office-tileset_49: -472637382
       office-tileset_5: 145738452
       office-tileset_50: -617724532
+      office-tileset_51: 609332350
       office-tileset_6: -163006873
       office-tileset_7: 1548283622
       office-tileset_8: -1800841529

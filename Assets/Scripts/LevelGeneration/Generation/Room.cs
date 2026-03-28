@@ -20,6 +20,25 @@ namespace LevelGeneration.Generation
             bounds.Add(rect);
         }
 
+        public RectInt GetCombinedBounds()
+        {
+            if (bounds == null || bounds.Count == 0)
+                return new RectInt(0, 0, 0, 0);
+
+            int minX = int.MaxValue, maxX = int.MinValue;
+            int minY = int.MaxValue, maxY = int.MinValue;
+
+            foreach (var rect in bounds)
+            {
+                minX = Mathf.Min(minX, rect.xMin);
+                maxX = Mathf.Max(maxX, rect.xMax);
+                minY = Mathf.Min(minY, rect.yMin);
+                maxY = Mathf.Max(maxY, rect.yMax);
+            }
+
+            return new RectInt(minX, minY, maxX - minX, maxY - minY);
+        }
+
         /// <summary>
         /// Returns the center-most point along the given edge direction
         /// </summary>
