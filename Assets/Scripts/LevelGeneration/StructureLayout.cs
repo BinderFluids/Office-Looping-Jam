@@ -16,6 +16,9 @@ namespace LevelGeneration
         [Tooltip("If true, every footprint tile must have walkable floor on all four sides (one tile inward from the room edge).")]
         public bool interiorOnlyPlacement = true;
 
+        [Tooltip("If true, spawn at the world-space center of the footprint (use when the prefab pivot is at the sprite center). If false, spawn at the bottom-left corner of the origin cell (CellToWorld) — use when the pivot matches that corner.")]
+        public bool placementAtFootprintCenter = true;
+
         [Tooltip("After spawn, move the root so the bottom-left of all Sprite/Mesh renderer bounds lines up with the bottom-left of the footprint tile (origin cell). Use this to skip hand-tuning sprite pivots.")]
         public bool autoAlignBottomLeftToFootprint;
     }

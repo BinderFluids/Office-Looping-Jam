@@ -11,7 +11,8 @@ namespace LevelGeneration.Generation
         [SerializeField] private Transform structureParent;
 
         /// <summary>
-        /// Spawns structure prefabs on walkable floor cells using each layout's <see cref="StructureRule"/>.
+        /// Spawns a prefab at every valid anchor on walkable floor cells using each layout's placement settings.
+        /// Later list entries avoid tiles covered by any placement of earlier structures.
         /// Order the list so layouts with <see cref="StructureRule.mustBeAdjacentToStructures"/> come after
         /// layouts they must touch (or use empty adjacency lists for structures that must spawn first).
         /// </summary>
@@ -25,13 +26,14 @@ namespace LevelGeneration.Generation
 
                 Debug.Log($"Placing structure: {structure.name}, Size : {size}");
 
-                bool placed = false;
+                int placedCount = 0;
 
                 foreach (Vector2Int tile in walkableTiles)
                 {
                     if (CanPlaceStructure(tile, size, walkableTiles, occupiedTiles, structure.interiorOnlyPlacement))
                     {
                         PlaceStructure(structure, tile);
+                        placedCount++;
 
                         for (int x = 0; x < size.x; x++)
                         {
@@ -40,15 +42,16 @@ namespace LevelGeneration.Generation
                                 occupiedTiles.Add(tile + new Vector2Int(x, y));
                             }
                         }
-
-                        placed = true;
-                        break;
                     }
                 }
 
-                if (!placed)
+                if (placedCount == 0)
                 {
                     Debug.LogWarning($"Could not place structure: {structure.name}");
+                }
+                else
+                {
+                    Debug.Log($"Placed {placedCount} instance(s) of {structure.name}");
                 }
             }
         }

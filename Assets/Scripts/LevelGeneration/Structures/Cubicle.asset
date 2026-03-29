@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cubicle
   m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.StructureLayout
   prefab: {fileID: 3123738537463794077, guid: b3bd8b2319d9b499780ae531e13bd89d, type: 3}
-  footprintInTiles: {x: 5, y: 6}
+  footprintInTiles: {x: 4, y: 3}
   placementRules:
     minCount: 1
     maxCount: 10
@@ -21,3 +21,5 @@ MonoBehaviour:
     avoidOverlap: 1
     placementChance: 1
   interiorOnlyPlacement: 1
+  placementAtFootprintCenter: 1
+  autoAlignBottomLeftToFootprint: 0

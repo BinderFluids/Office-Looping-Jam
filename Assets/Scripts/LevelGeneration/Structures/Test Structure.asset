@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cbc2e43a2b04fd0afb477534ec0a42e, type: 3}
-  m_Name: Cubicle Toilet
+  m_Name: Test Structure
   m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.StructureLayout
-  prefab: {fileID: 3123738537463794077, guid: b3bd8b2319d9b499780ae531e13bd89d, type: 3}
-  footprintInTiles: {x: 5, y: 6}
+  prefab: {fileID: 3123738537463794077, guid: c1c7c832aae28427cb655c5e9c4dec65, type: 3}
+  footprintInTiles: {x: 1, y: 1}
   placementRules:
     minCount: 1
     maxCount: 2
@@ -21,3 +21,4 @@ MonoBehaviour:
     avoidOverlap: 1
     placementChance: 1
   interiorOnlyPlacement: 1
+  autoAlignBottomLeftToFootprint: 0

@@ -39,9 +39,11 @@ namespace LevelGeneration.Generation
         /// <summary>Center of a rectangle of cells whose bottom-left tile is <paramref name="bottomLeftTile"/>.</summary>
         public Vector3 GetFootprintCenterWorld(Vector2Int bottomLeftTile, Vector2Int footprintSize)
         {
-            Vector3 corner = GetWorldPosition(bottomLeftTile);
-            Vector3 cs = floorTilemap.cellSize;
-            return corner + new Vector3(cs.x * footprintSize.x * 0.5f, cs.y * footprintSize.y * 0.5f, 0f);
+            Vector3Int bl = (Vector3Int)bottomLeftTile;
+            Vector3Int tr = bl + new Vector3Int(footprintSize.x - 1, footprintSize.y - 1, 0);
+            Vector3 bottomLeftCenter = floorTilemap.GetCellCenterWorld(bl);
+            Vector3 topRightCenter = floorTilemap.GetCellCenterWorld(tr);
+            return (bottomLeftCenter + topRightCenter) * 0.5f;
         }
 
         public Vector3 FloorCellSizeWorld => floorTilemap.cellSize;
