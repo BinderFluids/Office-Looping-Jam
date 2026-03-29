@@ -302,6 +302,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 705b5ade008884f7486cd660e27a2509, type: 2}
     - target: {fileID: 3373063662957569056, guid: 27ddf87d438724f2e8089ac4177f223c, type: 3}
+      propertyPath: cielingWall
+      value: 
+      objectReference: {fileID: 11400000, guid: 8bfee0ca2604644e8b38f300b221dfbc, type: 2}
+    - target: {fileID: 3373063662957569056, guid: 27ddf87d438724f2e8089ac4177f223c, type: 3}
       propertyPath: wallTilemap
       value: 
       objectReference: {fileID: 1425469667}

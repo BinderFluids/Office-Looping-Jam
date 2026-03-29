@@ -19,11 +19,17 @@ namespace LevelGeneration.Generation
             wallDiagonalCornerDownRight,
             wallDiagonalCornerDownLeft,
             wallDiagonalCornerUpRight,
-            wallDiagonalCornerUpLeft;
+            wallDiagonalCornerUpLeft,
+            cielingWall;
 
         public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions)
         {
             PaintTiles(floorPositions, floorTilemap, floorTile);
+        }
+
+        public void PaintCielingTiles(IEnumerable<Vector2Int> cielingPositions)
+        {
+            PaintTiles(cielingPositions, wallTilemap, cielingWall);
         }
         
         public Vector3 GetWorldPosition(Vector2Int tilePos)
@@ -35,18 +41,6 @@ namespace LevelGeneration.Generation
         {
             return floorTilemap.GetCellCenterWorld((Vector3Int)tilePos);
         }
-
-        /// <summary>Center of a rectangle of cells whose bottom-left tile is <paramref name="bottomLeftTile"/>.</summary>
-        public Vector3 GetFootprintCenterWorld(Vector2Int bottomLeftTile, Vector2Int footprintSize)
-        {
-            Vector3Int bl = (Vector3Int)bottomLeftTile;
-            Vector3Int tr = bl + new Vector3Int(footprintSize.x - 1, footprintSize.y - 1, 0);
-            Vector3 bottomLeftCenter = floorTilemap.GetCellCenterWorld(bl);
-            Vector3 topRightCenter = floorTilemap.GetCellCenterWorld(tr);
-            return (bottomLeftCenter + topRightCenter) * 0.5f;
-        }
-
-        public Vector3 FloorCellSizeWorld => floorTilemap.cellSize;
 
         private void PaintTiles(IEnumerable<Vector2Int> positions, Tilemap tilemap, TileBase tile)
         {
@@ -89,12 +83,6 @@ namespace LevelGeneration.Generation
         {
             var cellPosition = new Vector3Int(position.x, position.y, 0);
             tilemap.SetTile(cellPosition, tile);
-        }
-
-        public void Clear()
-        {
-            floorTilemap.ClearAllTiles();
-            wallTilemap.ClearAllTiles();
         }
 
         internal void PaintSingleCornerWall(Vector2Int position, string binaryType)
