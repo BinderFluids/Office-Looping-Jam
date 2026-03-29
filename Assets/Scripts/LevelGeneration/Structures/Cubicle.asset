@@ -16,10 +16,7 @@ MonoBehaviour:
   footprintInTiles: {x: 4, y: 3}
   placementRules:
     minCount: 1
-    maxCount: 10
-    mustBeAdjacentToStructures: []
+    maxCount: 30
     avoidOverlap: 1
-    placementChance: 1
   interiorOnlyPlacement: 1
-  placementAtFootprintCenter: 1
-  autoAlignBottomLeftToFootprint: 0
+  spawnOnPlacement: {fileID: 8958697897291671760, guid: c2bb9d62729aa638abbdb3c149a530a5, type: 3}
