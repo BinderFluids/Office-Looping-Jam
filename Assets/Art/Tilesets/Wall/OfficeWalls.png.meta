@@ -690,7 +690,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -699,6 +699,28 @@ TextureImporter:
       bones: []
       spriteID: 4f90d770d5b8a44819cea33f5b9e3fa2
       internalID: -1101163567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeWalls_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc25a49ccaaf41beb8cad03f66a55cf
+      internalID: 1039959615
       vertices: []
       indices: 
       edges: []
@@ -818,6 +840,7 @@ TextureImporter:
       Dungeon_Tileset_97: 1773143567
       Dungeon_Tileset_98: -2144428882
       Dungeon_Tileset_99: 2112664126
+      OfficeWalls_0: 1039959615
       Wall Top: 29606726
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

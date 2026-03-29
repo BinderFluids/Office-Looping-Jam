@@ -8,11 +8,6 @@ namespace LevelGeneration.Generation
     {
         Walkable = 0,
         Wall = 1,
-        Corner = 2,
-        T = 3,
-        Plus = 4,
-        DecoratedWall = 5,
-        DecoratedWallEnd = 6,
         Inaccessible = 99
     }
 
