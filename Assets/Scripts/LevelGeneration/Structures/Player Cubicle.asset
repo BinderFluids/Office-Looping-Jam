@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbc2e43a2b04fd0afb477534ec0a42e, type: 3}
+  m_Name: Player Cubicle
+  m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.StructureLayout
+  prefab: {fileID: 3123738537463794077, guid: cf59b1b3689ad48f496a6dadea2ef4ba, type: 3}
+  footprintInTiles: {x: 7, y: 3}
+  placementRules:
+    minCount: 1
+    maxCount: 1
+    avoidOverlap: 1
+  interiorOnlyPlacement: 1
+  spawnOnPlacement: {fileID: 8458239926702507575, guid: d8dea676e10ff4081971c0c864b1c7ca, type: 3}

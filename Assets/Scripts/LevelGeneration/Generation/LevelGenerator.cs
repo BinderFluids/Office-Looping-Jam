@@ -2,21 +2,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using LevelGeneration;
 using LevelGeneration.Generation;
-using UnityEngine.Tilemaps;
 
 public class LevelGenerator : MonoBehaviour
 {
-    [SerializeField] private List<StructureLayout> structures = new List<StructureLayout>();
-    [SerializeField] private int structuresToSpawn = 3;
-    
     [SerializeField] private LayoutGenerator layoutGenerator;
     [SerializeField] private TilemapVisualizer tilemapVisualizer;
+    [SerializeField] private StructurePlacementHelper structurePlacementHelper;
 
     private void Start()
     {
         this.layoutGenerator.GenerateRooms();
         int[,] tileMapArray = this.layoutGenerator.RoomsToTileArray();
-        
+
         HashSet<Vector2Int> walkableTiles = new HashSet<Vector2Int>();
         for (int x = 0; x < tileMapArray.GetLength(0); x++)
         {
@@ -31,5 +28,8 @@ public class LevelGenerator : MonoBehaviour
         
         this.tilemapVisualizer.PaintFloorTiles(walkableTiles);
         WallGenerator.CreateWalls(walkableTiles, this.tilemapVisualizer);
+
+        if (structurePlacementHelper != null)
+            structurePlacementHelper.PlaceStructures(walkableTiles);
     }
 }

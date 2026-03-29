@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbc2e43a2b04fd0afb477534ec0a42e, type: 3}
   m_Name: Cubicle
   m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.StructureLayout
-  prefab: {fileID: 3123738537463794077, guid: 5a3351c48a6e942309927dc3141a2889, type: 3}
+  prefab: {fileID: 3123738537463794077, guid: b3bd8b2319d9b499780ae531e13bd89d, type: 3}
+  footprintInTiles: {x: 4, y: 3}
   placementRules:
-    minCount: 0
-    maxCount: 2147483647
-    mustBeAdjacentToHallway: 0
-    mustBeAdjacentToStructures:
-    - {fileID: 11400000}
+    minCount: 1
+    maxCount: 30
     avoidOverlap: 1
-    placementChance: 1
+  interiorOnlyPlacement: 1
+  spawnOnPlacement: {fileID: 8958697897291671760, guid: c2bb9d62729aa638abbdb3c149a530a5, type: 3}
