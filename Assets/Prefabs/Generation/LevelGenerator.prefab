@@ -76,6 +76,7 @@ MonoBehaviour:
   wallDiagonalCornerDownLeft: {fileID: 11400000, guid: 9853633d59de241799539e7c469a996a, type: 2}
   wallDiagonalCornerUpRight: {fileID: 11400000, guid: abdee3874ca534ce6b439ce20dcfd9ba, type: 2}
   wallDiagonalCornerUpLeft: {fileID: 11400000, guid: 2931f5538934b40f292b5eac63df223e, type: 2}
+  cielingWall: {fileID: 11400000, guid: 8bfee0ca2604644e8b38f300b221dfbc, type: 2}
 --- !u!114 &3281279347489851726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +109,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelGeneration.Generation.StructurePlacementHelper
   structures:
   - {fileID: 11400000, guid: 41283b2b5b21e470f8f045fe11ad7979, type: 2}
-  - {fileID: 11400000, guid: 08e984249c7414bb9ad13f6edf537e37, type: 2}
+  - {fileID: 11400000, guid: 597bf2266099347a69a1bfc723711dc0, type: 2}
   tilemapVisualizer: {fileID: 3373063662957569056}
   structureParent: {fileID: 0}
