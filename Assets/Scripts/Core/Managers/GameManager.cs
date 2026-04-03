@@ -6,9 +6,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject playerPrefab;
+    private GameObject playerGameObject; 
     
     EventBinding<TeleportPlayerEvent> teleportPlayerBinding;
-    
+
+    private void Awake()
+    {
+        playerGameObject = Instantiate(playerPrefab);
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +34,8 @@ public class GameManager : MonoBehaviour
 
     private void TeleportPlayer(TeleportPlayerEvent e)
     {
-        playerPrefab.transform.position = e.Position;
+        if (playerGameObject != null)
+            playerGameObject.transform.position = e.Position;
     }
 
     private void OnDisable()
