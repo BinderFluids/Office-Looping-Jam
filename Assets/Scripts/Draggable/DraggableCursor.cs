@@ -13,8 +13,18 @@ namespace Draggable
         private Vector2 offset; 
         private DraggableBehaviour target;
         
+        [SerializeField] private bool canDrag = false;
+        public void SetCanDrag(bool value)
+        {
+            canDrag = value;
+            if (!canDrag)
+                ReleaseTarget();
+        }
+
         private void Update()
         {
+            if (!canDrag) return;
+            
             if (input.Click.WasPressedThisFrame)
             {
                 target =
@@ -23,16 +33,27 @@ namespace Draggable
 
                 if (target != null)
                 {
-                    offset = target.transform.position - input.MouseWorldPosition.ToVector3();
+                    target.DragStart(); 
+                    //offset = input.MouseWorldPosition.ToVector3() - target.transform.position;
                 }
             }
 
             if (target != null)
-                target.transform.position = input.MouseWorldPosition + offset; 
+            {
+                target.Drag();
+                target.transform.position = input.MouseWorldPosition;// + offset;
+            }
 
-            
+
             if (!input.Click.IsPressed)
-                target = null;
+                ReleaseTarget();
+        }
+
+        void ReleaseTarget()
+        {
+            
+            target?.DragEnd();
+            target = null;
         }
     }
 }

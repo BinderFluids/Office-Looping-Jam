@@ -542,6 +542,15 @@ public partial class @InputSystem: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PlayMicrogame"",
+                    ""type"": ""Button"",
+                    ""id"": ""5cb089e1-252b-4218-aa1d-d43790e6bdd6"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -553,6 +562,17 @@ public partial class @InputSystem: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""A"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f70db9fe-60a5-4ba7-b26f-1dd4040d4667"",
+                    ""path"": ""<Keyboard>/numpad0"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayMicrogame"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -636,6 +656,7 @@ public partial class @InputSystem: IInputActionCollection2, IDisposable
         // Debug
         m_Debug = asset.FindActionMap("Debug", throwIfNotFound: true);
         m_Debug_A = m_Debug.FindAction("A", throwIfNotFound: true);
+        m_Debug_PlayMicrogame = m_Debug.FindAction("PlayMicrogame", throwIfNotFound: true);
     }
 
     ~@InputSystem()
@@ -966,6 +987,7 @@ public partial class @InputSystem: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Debug;
     private List<IDebugActions> m_DebugActionsCallbackInterfaces = new List<IDebugActions>();
     private readonly InputAction m_Debug_A;
+    private readonly InputAction m_Debug_PlayMicrogame;
     /// <summary>
     /// Provides access to input actions defined in input action map "Debug".
     /// </summary>
@@ -981,6 +1003,10 @@ public partial class @InputSystem: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Debug/A".
         /// </summary>
         public InputAction @A => m_Wrapper.m_Debug_A;
+        /// <summary>
+        /// Provides access to the underlying input action "Debug/PlayMicrogame".
+        /// </summary>
+        public InputAction @PlayMicrogame => m_Wrapper.m_Debug_PlayMicrogame;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1010,6 +1036,9 @@ public partial class @InputSystem: IInputActionCollection2, IDisposable
             @A.started += instance.OnA;
             @A.performed += instance.OnA;
             @A.canceled += instance.OnA;
+            @PlayMicrogame.started += instance.OnPlayMicrogame;
+            @PlayMicrogame.performed += instance.OnPlayMicrogame;
+            @PlayMicrogame.canceled += instance.OnPlayMicrogame;
         }
 
         /// <summary>
@@ -1024,6 +1053,9 @@ public partial class @InputSystem: IInputActionCollection2, IDisposable
             @A.started -= instance.OnA;
             @A.performed -= instance.OnA;
             @A.canceled -= instance.OnA;
+            @PlayMicrogame.started -= instance.OnPlayMicrogame;
+            @PlayMicrogame.performed -= instance.OnPlayMicrogame;
+            @PlayMicrogame.canceled -= instance.OnPlayMicrogame;
         }
 
         /// <summary>
@@ -1201,5 +1233,12 @@ public partial class @InputSystem: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnA(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "PlayMicrogame" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnPlayMicrogame(InputAction.CallbackContext context);
     }
 }

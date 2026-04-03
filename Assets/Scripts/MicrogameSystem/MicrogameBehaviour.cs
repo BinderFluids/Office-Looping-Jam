@@ -1,3 +1,4 @@
+using System;
 using Registry;
 using UnityEngine;
 
@@ -5,13 +6,20 @@ namespace MicrogameSystem
 {
     public abstract class MicrogameBehaviour<T> : MonoBehaviour where T : MicrogameContext<T>
     {
-        private T ctx;
+        protected MicrogameContext<T> ctx => MicrogameContext<T>.Instance; 
 
-        private void Awake()
+        protected virtual void Awake()
         {
             Registry<MicrogameBehaviour<T>>.TryAdd(this); 
         }
-
-        public abstract void OnMicrogameUpdate(float dt);
+    
+        public virtual void OnMicrogameStart() { }
+        public virtual void OnMicrogameUpdate(float dt) { }
+        public virtual void OnMicrogameEnd() { }
+        
+        protected virtual void OnDestroy()
+        {
+            Registry<MicrogameBehaviour<T>>.Remove(this); 
+        }
     }
 }

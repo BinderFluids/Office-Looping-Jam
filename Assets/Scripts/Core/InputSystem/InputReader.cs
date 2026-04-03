@@ -13,6 +13,7 @@ public class InputReader : ScriptableObject, IPlayerActions, IDialogueActions, I
     public BoolInputData Progress;
     public BoolInputData Skip;
     public BoolInputData Click;
+    public BoolInputData PlayMicrogame;
     
     public Vector2InputData PlayerMove;
     public Vector2InputData DialogueMove;
@@ -73,11 +74,17 @@ public class InputReader : ScriptableObject, IPlayerActions, IDialogueActions, I
         Click = new BoolInputData(inputActions.Player.Click);
         
         DebugA = new BoolInputData(inputActions.Debug.A);
+        PlayMicrogame = new BoolInputData(inputActions.Debug.PlayMicrogame);
     }
     
     public void OnA(InputAction.CallbackContext context)
     {
         DebugA.Trigger(context);
+    }
+
+    public void OnPlayMicrogame(InputAction.CallbackContext context)
+    {
+        PlayMicrogame.Trigger(context);
     }
 
     public void OnSkip(InputAction.CallbackContext context)

@@ -1,30 +1,25 @@
+using System.Collections.Generic;
+using System.Linq;
+using Registry;
+
 namespace MicrogameSystem.DragEmails
 {
     public class DragEmailsContext : MicrogameContext<DragEmailsContext>
     {
-        protected override void OnStart()
+        protected override void OnStartMicrogame()
         {
-            throw new System.NotImplementedException();
+            Registry<EmailItem>._onItemRemovedNoArgs += CheckEmailsSortedCorrectly; 
         }
 
-        protected override void OnUpdate()
+        void CheckEmailsSortedCorrectly()
         {
-            throw new System.NotImplementedException();
+            if (Registry<EmailItem>.Count > 0) return;
+            Succeed();
         }
 
-        protected override void OnEnd()
+        protected override void OnEndMicrogame()
         {
-            throw new System.NotImplementedException();
-        }
-    }
-
-    public class EmailDraggable : MicrogameBehaviour<DragEmailsContext>
-    {
-        
-        
-        public override void OnMicrogameUpdate(float dt)
-        {
-            
+            Registry<EmailItem>._onItemRemovedNoArgs -= CheckEmailsSortedCorrectly; 
         }
     }
 }
