@@ -899,6 +899,127 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &854082931
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1113125848}
+    m_Modifications:
+    - target: {fileID: 6841123701533539, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_Name
+      value: Drag Emails
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+--- !u!114 &854082932 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1335742209675747447, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+  m_PrefabInstance: {fileID: 854082931}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14dd8a50abf44f9e89037277897e3a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MicrogameSystem.DragEmails.DragEmailsContext
+--- !u!4 &854082933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6441589709913983603, guid: 0a06ae925429e5e01a873652815029d9, type: 3}
+  m_PrefabInstance: {fileID: 854082931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1113125846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113125848}
+  - component: {fileID: 1113125847}
+  m_Layer: 0
+  m_Name: Microgame Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1113125847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113125846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a095e408a768831bea1a68056da26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MicrogameContextManager
+  workMicrogames:
+  - underlyingValue: {fileID: 854082932}
+  personalMicrogames: []
+--- !u!4 &1113125848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113125846}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 428.81012, y: 262.546, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 854082933}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1189177697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2959950612239093531, guid: bd9065199307054eeac0cf9a0fbc549a, type: 3}
@@ -1101,9 +1222,9 @@ Camera:
     y: 0.0017421603
     width: 0.99782133
     height: 0.9965157
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 40
   orthographic: 1
   orthographic size: 8.9375
   m_Depth: -1
@@ -1130,7 +1251,7 @@ Transform:
   m_GameObject: {fileID: 1392735367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -20}
+  m_LocalPosition: {x: 428.81012, y: 262.546, z: -1.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2077,3 +2198,4 @@ SceneRoots:
   - {fileID: 773061263}
   - {fileID: 48958202}
   - {fileID: 153320054}
+  - {fileID: 1113125848}
