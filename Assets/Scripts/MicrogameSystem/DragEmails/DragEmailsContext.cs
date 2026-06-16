@@ -8,18 +8,18 @@ namespace MicrogameSystem.DragEmails
     {
         protected override void OnStartMicrogame()
         {
-            Registry<EmailItem>._onItemRemovedNoArgs += CheckEmailsSortedCorrectly; 
+            OnAddBehaviour.onEventNoArgs += CheckEmailsSortedCorrectly; 
         }
 
         void CheckEmailsSortedCorrectly()
         {
-            if (Registry<EmailItem>.Count > 0) return;
+            if (Behaviours.Any(b => b is EmailItem)) return;
             Succeed();
         }
 
         protected override void OnEndMicrogame()
         {
-            Registry<EmailItem>._onItemRemovedNoArgs -= CheckEmailsSortedCorrectly; 
+            OnAddBehaviour.onEventNoArgs -= CheckEmailsSortedCorrectly; 
         }
     }
 }

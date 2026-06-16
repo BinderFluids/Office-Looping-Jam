@@ -10,7 +10,7 @@ public class MicrogameContextManager : MonoBehaviour
 {
     [SerializeField] private List<InterfaceReference<IMicrogameContext>> workMicrogames;
     [SerializeField] private List<InterfaceReference<IMicrogameContext>> personalMicrogames;
-
+    
     private void Update()
     {
         if (InputManager.Instance.InputReader.PlayMicrogame.WasPressedThisFrame)

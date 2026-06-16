@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public interface IGameEventListener<T>
 {
@@ -9,11 +10,12 @@ public interface IGameEventListener<T>
 public class GameEventListener<T> : MonoBehaviour, IGameEventListener<T>
 {
     [SerializeField] private ScriptableEvent<T> scriptableEvent;
-    public EventWrapper.EventWrapper<T> response;
+    [Space]
+    [SerializeField] private UnityEvent<T> response; 
 
     private void OnEnable() => scriptableEvent.RegisterListener(this);
     private void OnDisable() => scriptableEvent.UnregisterListener(this);
 
     public void OnEventRaised(T data) =>
-        response.Raise(data); 
+        response?.Invoke(data); 
 }

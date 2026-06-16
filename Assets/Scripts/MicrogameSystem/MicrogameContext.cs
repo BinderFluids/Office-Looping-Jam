@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using Registry;
 using UnityEditor;
@@ -21,8 +22,39 @@ namespace MicrogameSystem
         public EventWrapper.EventWrapper OnMicrogameUpdate = new();
         public EventWrapper.EventWrapper OnMicrogameSucceed = new();
         public EventWrapper.EventWrapper OnMicrogameFail = new();
-            
-        public IEnumerable<MicrogameBehaviour<T>> Behaviours => Registry<MicrogameBehaviour<T>>.All;
+
+        public IEnumerable<MicrogameBehaviour<T>> Behaviours => behaviours;
+        [SerializeField] private List<MicrogameBehaviour<T>> behaviours = new();
+        public EventWrapper.EventWrapper<MicrogameBehaviour<T>> OnAddBehaviour = new();
+        public EventWrapper.EventWrapper<MicrogameBehaviour<T>> OnRemoveBehaviour = new();
+        
+        private List<MicrogameBehaviour<T>> queuedBehaviours = new(); 
+        
+        public void AddBehaviour(MicrogameBehaviour<T> behaviour)
+        {
+            if (behaviours.Contains(behaviour) || queuedBehaviours.Contains(behaviour)) return;
+            queuedBehaviours.Add(behaviour);
+        }
+
+        public void RemoveBehaviour(MicrogameBehaviour<T> behaviour)
+        {
+            if (!behaviours.Contains(behaviour)) return; 
+            behaviours.Remove(behaviour);
+            OnRemoveBehaviour.Raise(behaviour);
+        }
+        
+        
+        void FillBehavioursFromQueued()
+        {
+            foreach (MicrogameBehaviour<T> behaviour in queuedBehaviours)
+            {
+                if (behaviours.Contains(behaviour)) continue;
+                behaviours.Add(behaviour);
+                OnAddBehaviour.Raise(behaviour);
+            }
+            queuedBehaviours.Clear();
+        }
+        
         public static MicrogameContext<T> Instance { get; private set; }
 
         [SerializeField] private bool shouldStartWithWinConditionMet = false; 
@@ -73,9 +105,11 @@ namespace MicrogameSystem
             OnMicrogameUpdate.Invoke();
             for (int i = Behaviours.Count(); i > 0; i--)
             {
-                MicrogameBehaviour<T> behaviour = Behaviours.ToList()[i]; 
+                MicrogameBehaviour<T> behaviour = behaviours[i]; 
                 behaviour.OnMicrogameUpdate(Time.deltaTime);
             }
+            FillBehavioursFromQueued();
+            
             OnUpdate();
         }
 

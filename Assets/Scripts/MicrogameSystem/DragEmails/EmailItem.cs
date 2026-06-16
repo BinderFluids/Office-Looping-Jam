@@ -16,7 +16,7 @@ namespace MicrogameSystem.DragEmails
         protected override void Awake()
         {
             base.Awake();
-            Registry<EmailItem>.TryAdd(this); 
+            DragEmailsContext.Instance.AddBehaviour(this); 
         }
 
         public void Init()
@@ -27,7 +27,7 @@ namespace MicrogameSystem.DragEmails
 
         protected override void OnDestroy()
         {
-            Registry<EmailItem>.Remove(this); 
+            DragEmailsContext.Instance.RemoveBehaviour(this); 
         }
     }
 }
